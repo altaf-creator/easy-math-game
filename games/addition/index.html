@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <title>Math Game - In Game - Addition</title>
+</head>
+<body>
+    <div class="container" style="background-color: white; border-radius: 5px;" id="questionContainer">
+        <form style="margin: 0;" action="../../index.html">
+            <button class="btn" style="width:fit-content; margin: 0px 0px 0px 0px; float: left;">
+                < Back
+            </button>
+        </form>
+            <button class="btn" style="width:fit-content; margin: 0px 0px 0px 0px; float: right;" id="nextBtn" onClick="getQuestion()">
+                Next >
+            </button>
+        <br><br>
+        <h1 style="margin-bottom: 50px; text-align: center; display: block; color: black;" id="question">Question</h1>
+        <div style="display: flex;">
+            <input type="text" id="answerInput" placeholder="Answer..."/><button onClick="submit()" class="btn" style="width:fit-content; margin: 0px 0px 0px 20px" id="button">Submit</button>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
