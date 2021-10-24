@@ -15,6 +15,7 @@ function getQuestion() {
     container.style.border = "none";
     button.disabled = false;
     input.disabled = false;
+    nextBtn.disabled = true;
     input.value = "";
     if ((val1 - val2) < 0) {
         getQuestion();
