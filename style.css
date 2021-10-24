@@ -31,7 +31,7 @@ button:hover {
 
 button:active {
     box-shadow: inset 0 0 0 0 #0048a7;
-    transform: translateY(1.5px);
+    transform: translateY(2.5px);
 }
 
 button:disabled {
