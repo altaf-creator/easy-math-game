@@ -12,7 +12,7 @@ button {
     margin: auto;
     padding: 5px 20px 5px 20px;
     border-radius: 5px;
-    color:white;
+    color: white;
     background-color: #006eff;
     transition-duration: 0.25s;
 	transition-property: all;
