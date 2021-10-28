@@ -71,3 +71,67 @@ input:disabled {
     background-color: rgb(179, 179, 179);
     box-shadow: inset 0 -3px 0 0 rgb(148, 148, 148);
 }
+
+.link {
+    display: inline-block;
+    color: #006eff;
+    text-decoration: none;
+}
+  
+.link:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #006eff;
+    transition: 400ms;
+    text-align: center;
+    display: block;
+}
+  
+.link:hover:after {
+    width: 100%;
+}
+
+.link:focus:after {
+    background: #0048a7;
+    transition: 400ms;
+}
+
+.link:focus {
+    color: #0048a7;
+    transition: 400ms;
+}
+
+.buttonSecondary {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    margin: auto;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #ff9100;
+    transition-duration: 0.25s;
+	transition-property: all;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 20px 0px 20px;
+    box-shadow: inset 0 -3px 0 0 #cc7504;
+    display: block;
+    width: 300px;
+    border: none;
+}
+
+.buttonSecondary:hover {
+    background-color: #ffd000;
+}
+
+.buttonSecondary:active {
+    box-shadow: inset 0 0 0 0 #cc7504;
+    transform: translateY(2.5px);
+}
+
+.buttonSecondary:disabled {
+    background-color: #ffa32a;
+    box-shadow: inset 0 -3px 0 0 #cf7f17;
+}
