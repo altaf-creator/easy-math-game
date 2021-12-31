@@ -6,8 +6,8 @@ let nextBtn = document.getElementById("nextBtn");
 nextBtn.disabled = true;
 
 function getQuestion() {
-    val1 = Math.floor(Math.random() * 100);
-    val2 = Math.floor(Math.random() * 100);
+    val1 = Math.floor(Math.random() * 200);
+    val2 = Math.floor(Math.random() * 200);
 
     var question = val1.toString() + " - " + val2.toString();
     document.getElementById("question").innerHTML = question.toString();
