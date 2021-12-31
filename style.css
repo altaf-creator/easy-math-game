@@ -15,7 +15,7 @@ button {
     color: white;
     background-color: #006eff;
     transition-duration: 0.25s;
-	transition-property: all;
+    transition-property: all;
     text-align: center;
     text-decoration: none;
     margin: 0px 20px 0px 20px;
