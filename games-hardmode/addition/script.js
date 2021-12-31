@@ -6,10 +6,10 @@ let nextBtn = document.getElementById("nextBtn");
 nextBtn.disabled = true;
 
 function getQuestion() {
-    val1 = Math.floor(Math.random() * 5);
-    val2 = Math.floor(Math.random() * 10);
+    val1 = Math.floor(Math.random() * 100);
+    val2 = Math.floor(Math.random() * 100);
 
-    var question = val1.toString() + " × " + val2.toString();
+    var question = val1.toString() + " + " + val2.toString();
     document.getElementById("question").innerHTML = question.toString();
     console.log("Generated a Question");
     container.style.border = "none";
@@ -17,15 +17,12 @@ function getQuestion() {
     input.disabled = false;
     nextBtn.disabled = true;
     input.value = "";
-    if ((val1 * val2) < 0) {
-        getQuestion();
-    }
 }
 
 function submit() {
     console.log("User submitted.")
     
-    if(input.value.toString() == val1 * val2) {
+    if(input.value.toString() == val1 + val2) {
         console.log("Correct answer!")
         document.getElementById("question").innerHTML = "Correct!"; 
         input.disabled = true;
@@ -33,8 +30,8 @@ function submit() {
         container.style.border = "6px solid #36F443";
         nextBtn.disabled = false;
     } else {
-        console.log(`Incorrect answer.\nThe correct answer is ${(val1 * val2).toString()}\nUser answered ${(input.value).toString()}`)
-        document.getElementById("question").innerHTML = `Incorrect.<br>Correct answer: <strong>${(val1 * val2).toString()}</strong>`; 
+        console.log(`Incorrect answer.\nThe correct answer is ${(val1 + val2).toString()}\nUser answered ${(input.value).toString()}`)
+        document.getElementById("question").innerHTML = `Incorrect.<br>Correct answer: <strong>${(val1 + val2).toString()}</strong>`; 
         input.disabled = true;
         button.disabled = true;
         container.style.border = "6px solid #F44336";

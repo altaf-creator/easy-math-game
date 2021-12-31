@@ -33,8 +33,8 @@ function submit() {
         container.style.border = "6px solid #36F443";
         nextBtn.disabled = false;
     } else {
-        console.log(`Incorreect answer.\nThe correct answer is ${(val1 - val2).toString()}\nUser answered ${(input.value).toString()}`)
-        document.getElementById("question").innerHTML = `Incorreect.<br>Correct answer: <strong>${(val1 - val2).toString()}</strong>`; 
+        console.log(`Incorrect answer.\nThe correct answer is ${(val1 - val2).toString()}\nUser answered ${(input.value).toString()}`)
+        document.getElementById("question").innerHTML = `Incorrect.<br>Correct answer: <strong>${(val1 - val2).toString()}</strong>`; 
         input.disabled = true;
         button.disabled = true;
         container.style.border = "6px solid #F44336";

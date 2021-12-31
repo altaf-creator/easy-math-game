@@ -6,8 +6,8 @@ let nextBtn = document.getElementById("nextBtn");
 nextBtn.disabled = true;
 
 function getQuestion() {
-    val1 = Math.floor(Math.random() * 5);
-    val2 = Math.floor(Math.random() * 10);
+    val1 = Math.floor(Math.random() * 100);
+    val2 = Math.floor(Math.random() * 100);
 
     var question = val1.toString() + " × " + val2.toString();
     document.getElementById("question").innerHTML = question.toString();
@@ -17,9 +17,6 @@ function getQuestion() {
     input.disabled = false;
     nextBtn.disabled = true;
     input.value = "";
-    if ((val1 * val2) < 0) {
-        getQuestion();
-    }
 }
 
 function submit() {
